@@ -1,0 +1,4 @@
+<factorypath>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/glassfish/main/extras/glassfish-embedded-all/5.1.0/glassfish-embedded-all-5.1.0.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/javax/javaee-web-api/8.0/javaee-web-api-8.0.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>
