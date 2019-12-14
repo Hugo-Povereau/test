@@ -1,10 +1,14 @@
 {
-  "name": "Reb",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
-  "main": "src/main.js",
-  "private": true,
-  "scripts": {
+    "name": "NomOriginal",
+    "version": "1.0.0",
+    "keywords": ["util", "functional", "server", "client", "browser"],
+    "author": "Reb",
+    "contributors": [],
+    "dependencies": {},
+    "description": "A Vue.js project",
+    "main": "src/main.js",
+    "private": true,
+    "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
@@ -76,3 +80,4 @@
     "not ie <= 8"
   ]
 }
+
