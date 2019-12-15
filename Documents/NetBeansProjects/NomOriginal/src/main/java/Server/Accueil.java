@@ -38,6 +38,7 @@ public class Accueil extends HttpServlet {
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Accueil</title>");
+            out.println("<link href=\"http://fr.allfont.net/allfont.css?fonts=commercial-script-bt\" rel=\"stylesheet\" type=\"text/css3\" />");
             out.println("<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css\" integrity=\"sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh\" crossorigin=\"anonymous\">\n" +
 "    <script src=\"https://code.jquery.com/jquery-3.2.1.slim.min.js\" integrity=\"sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN\" crossorigin=\"anonymous\"></script>\n" +
 "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\" integrity=\"sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q\" crossorigin=\"anonymous\"></script>\n" +
@@ -52,23 +53,26 @@ public class Accueil extends HttpServlet {
 "        height:100%;\n" +
 "      }\n" +
 "\n" +
-"\n" +
-"\n" +
 "      #image{\n" +
 "        background-color:#454545;\n" +                    
 "        position:absolute;\n" +
 "        vertical-align: top;\n" +    
 "        width:40%;\n" +            
-"        top:26%;\n" +
+"        top:30%;\n" +
 "        left:50%;\n" +
 "        transform: translate(-50%, -50%);\n" +
 "\n" +
 "      }\n" +
 "      p{\n" +
 "        position:absolute;\n" +
+"        background:radial-gradient(#91dbca, #d8e8a0);\n" +
 "        top:60%;\n" +
-"        left:45%;\n" +
-"        font-size:1.5em;\n" +
+"        left:40%;\n" +
+"        font-family: 'Commercial Script BT', arial;\n" +
+"        font-size: 48px;\n" +
+"        text-shadow: 4px 4px 4px #aaa;\n" +
+"        border-radius: 15px 50px 30px;\n" +
+"        padding: 10px;\n" +
 "      }\n" +
 "\n" +
 "      #image_1{\n" +
@@ -173,31 +177,24 @@ public class Accueil extends HttpServlet {
 "    </script>");
             out.println(" <header>\n" +
 "      <div class=\"navbar navbar-expand-md navbar-dark bg-dark mb-4\" role=\"navigation\">\n" +
-"    <a class=\"navbar-brand\" href=\"#\">Champo'zin</a>\n" +
+"    <a class=\"navbar-brand\" href=\"Accueil\">Champo'zin</a>\n" +
 "    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n" +
 "        <span class=\"navbar-toggler-icon\"></span>\n" +
 "    </button>\n" +
 "    <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\n" +
 "        <ul class=\"navbar-nav mr-auto\">\n" +
 "\n" +
-"            <li class=\"nav-item dropdown\">\n" +
-"                <a class=\"nav-link dropdown-toggle\" id=\"dropdown1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">on teste la longueur maximal possible pour un titre</a>\n" +
-"                <ul class=\"dropdown-menu\" aria-labelledby=\"dropdown1\">\n" +
-"                    <li class=\"dropdown-item\"> <a href=\"AnotherServlet\" >on teste la longueur maximal possible pour un titre</a></li>\n" +
-"                    <li class=\"dropdown-item dropdown\">\n" +
-"                        <a class=\"dropdown-toggle\" id=\"dropdown1-1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Peut-être PAS</a>\n" +
-"                    </li>\n" +
-"                </ul>\n" +
-"            </li>\n" +
-"            <li class=\"nav-item dropdown\">\n" +
-"                <a class=\"nav-link dropdown-toggle\" id=\"dropdown2\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Slide 2</a>\n" +
-"                <ul class=\"dropdown-menu\" aria-labelledby=\"dropdown2\">\n" +
-"                    <li class=\"dropdown-item\" href=\"#\"><a>Pas là</a></li>\n" +
-"                    <li class=\"dropdown-item\" href=\"#\"><a>Pas là  B</a></li>\n" +
-"                    <li class=\"dropdown-item\" href=\"#\"><a>Pas là</a></li>\n" +
-"                    <li class=\"dropdown-item dropdown\"></li>\n" +
-"                </ul>\n" +
-"            </li>\n" +
+"            <li class=\"nav-item active\">\n" +
+"                <a class=\"nav-link\" href=\"Panier\"> <span class=\"sr-only\">(current)</span>\n" +
+"                <img src=\"images/Panier.png\" width=\"30\" height=\"30\" class=\"d-inline-block align-top\" alt=\"\">\n" +
+"                Panier</a>\n" +
+"            </li>\n" + 
+"\n" +              
+"            <li class=\"nav-item active\">\n" +
+"                <a class=\"nav-link\" href=\"Compte\"> <span class=\"sr-only\">(current)</span>\n" +
+"                <img src=\"images/Compte.png\" width=\"30\" height=\"30\" class=\"d-inline-block align-top\" alt=\"\">\n" +
+"                Compte</a>\n" +
+"            </li>\n" +                
 "        </ul>\n" +
 "\n" +
 "    </div>\n" +
@@ -205,8 +202,7 @@ public class Accueil extends HttpServlet {
 "        <input id=\"ecrit\" class=\"form-control mr-sm-2\" type=\"text\" placeholder=\"Rechercher un produit \" aria-label=\"Search\">\n" +
 "        <button  id= \"cherche_bon_mot\" class=\"btn btn-dark my-2 my-sm-0\" type=\"button\">Search</button>\n" +
 "    </form>\n" +
-"</div>\n" +
-"\n" +
+"    </div>\n" +
 "\n" +
 "  		</header>");
             out.println("<div id = \"image\" class=\"row\" >\n" +

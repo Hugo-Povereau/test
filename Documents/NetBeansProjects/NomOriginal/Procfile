@@ -1,1 +1,1 @@
-web: sh target/bin/startup
+web: node server.js

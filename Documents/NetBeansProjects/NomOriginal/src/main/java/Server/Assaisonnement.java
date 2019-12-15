@@ -43,6 +43,11 @@ public class Assaisonnement extends HttpServlet {
             out.println("</head>");
             out.println("<body>");
             out.println("  <style >\n" +
+"      html{\n" +
+"        background:radial-gradient(#91dbca, #d8e8a0);\n" +
+"        background-repeat: no-repeat;\n" +
+"        height:100%;\n" +
+"      }\n" +
 "      .navbar .dropdown-toggle, .navbar .dropdown-menu a {\n" +
 "          cursor: pointer;\n" +
 "      }\n" +
@@ -105,31 +110,24 @@ public class Assaisonnement extends HttpServlet {
 "    </script>");
             out.println(" <header>\n" +
 "      <div class=\"navbar navbar-expand-md navbar-dark bg-dark mb-4\" role=\"navigation\">\n" +
-"    <a class=\"navbar-brand\" href=\"#\">Champo'zin</a>\n" +
+"    <a class=\"navbar-brand\" href=\"Accueil\">Champo'zin</a>\n" +
 "    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarCollapse\" aria-controls=\"navbarCollapse\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n" +
 "        <span class=\"navbar-toggler-icon\"></span>\n" +
 "    </button>\n" +
 "    <div class=\"collapse navbar-collapse\" id=\"navbarCollapse\">\n" +
 "        <ul class=\"navbar-nav mr-auto\">\n" +
 "\n" +
-"            <li class=\"nav-item dropdown\">\n" +
-"                <a class=\"nav-link dropdown-toggle\" id=\"dropdown1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">on teste la longueur maximal possible pour un titre</a>\n" +
-"                <ul class=\"dropdown-menu\" aria-labelledby=\"dropdown1\">\n" +
-"                    <li class=\"dropdown-item\"> <a href=\"AnotherServlet\" >on teste la longueur maximal possible pour un titre</a></li>\n" +
-"                    <li class=\"dropdown-item dropdown\">\n" +
-"                        <a class=\"dropdown-toggle\" id=\"dropdown1-1\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Peut-être PAS</a>\n" +
-"                    </li>\n" +
-"                </ul>\n" +
-"            </li>\n" +
-"            <li class=\"nav-item dropdown\">\n" +
-"                <a class=\"nav-link dropdown-toggle\" id=\"dropdown2\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">Slide 2</a>\n" +
-"                <ul class=\"dropdown-menu\" aria-labelledby=\"dropdown2\">\n" +
-"                    <li class=\"dropdown-item\" href=\"#\"><a>Pas là</a></li>\n" +
-"                    <li class=\"dropdown-item\" href=\"#\"><a>Pas là  B</a></li>\n" +
-"                    <li class=\"dropdown-item\" href=\"#\"><a>Pas là</a></li>\n" +
-"                    <li class=\"dropdown-item dropdown\"></li>\n" +
-"                </ul>\n" +
-"            </li>\n" +
+"            <li class=\"nav-item active\">\n" +
+"                <a class=\"nav-link\" href=\"Panier\"> <span class=\"sr-only\">(current)</span>\n" +
+"                <img src=\"images/Panier.png\" width=\"30\" height=\"30\" class=\"d-inline-block align-top\" alt=\"\">\n" +
+"                Panier</a>\n" +
+"            </li>\n" + 
+"\n" +              
+"            <li class=\"nav-item active\">\n" +
+"                <a class=\"nav-link\" href=\"Compte\"> <span class=\"sr-only\">(current)</span>\n" +
+"                <img src=\"images/Compte.png\" width=\"30\" height=\"30\" class=\"d-inline-block align-top\" alt=\"\">\n" +
+"                Compte</a>\n" +
+"            </li>\n" +                
 "        </ul>\n" +
 "\n" +
 "    </div>\n" +
