@@ -93,4 +93,7 @@
             30
         </session-timeout>
     </session-config>
+    <welcome-file-list>
+        <welcome-file>Accueil.java</welcome-file>
+    </welcome-file-list>
 </web-app>

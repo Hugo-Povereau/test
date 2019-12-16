@@ -331,6 +331,16 @@ public class Compte extends HttpServlet {
 "       $(this).find('ul.dropdown-menu').removeClass('show open');\n" +
 "   });\n" +
 "    </script>");
+            
+            out.println("<script type=\"text/javascript\">\n" +
+"    function reponse() {\n" +
+"  var login = document.getElementById(\"login\").value;\n" +
+"  var password = document.getElementById(\"password\").value;\n" +
+"  if (login == \"Contact\" || password == \"Code\") {\n" +
+"   var identifiant = 1;\n" +
+"   window.location.href=\"Server/Accueil.java\"; \n" +
+"}\n" +
+"  </script>");
             out.println(" <header>\n" +
 "      <div class=\"navbar navbar-expand-md navbar-dark bg-dark mb-4\" role=\"navigation\">\n" +
 "    <a class=\"navbar-brand\" href=\"Accueil\">Champo'zin</a>\n" +
@@ -374,7 +384,7 @@ public class Compte extends HttpServlet {
 "    <form>\n" +
 "      <input type=\"text\" id=\"login\" class=\"fadeIn second\" name=\"login\" placeholder=\"login\">\n" +
 "      <input type=\"text\" id=\"password\" class=\"fadeIn third\" name=\"login\" placeholder=\"password\">\n" +
-"      <input type=\"submit\" class=\"fadeIn fourth\" value=\"Log In\">\n" +
+"      <input type=\"submit\" class=\"fadeIn fourth\" value=\"Log In\" onclick=\"reponse()\">\n" +
 "    </form>\n" +
 "\n" +
 "  </div>\n" +
