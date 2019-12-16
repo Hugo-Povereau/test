@@ -138,6 +138,37 @@ public class Biscuit extends HttpServlet {
 "</div>\n" +
 "\n" +
 "\n" +
+"\n" + 
+"<table class=\"table\"> \n" +
+"<thead class=\"thead-dark\"> \n" +
+"    <tr>\n" + 
+"      <th scope=\"col\">#</th> \n" + 
+"      <th scope=\"col\">Nom</th> \n" +
+"      <th scope=\"col\">Quantite</th> \n" +
+"      <th scope=\"col\">Prix</th> \n"+
+"    </tr> \n"+
+"  </thead>\n"+
+"  <tbody>\n"+
+"    <tr>\n"+
+"      <th scope=\"row\">1</th>\n"+
+"      <td>Mark</td>\n"+
+"     <td>Otto</td>\n"+
+"      <td>@mdo</td>\n"+
+"    </tr>\n"+
+"    <tr>\n"+
+"      <th scope=\"row\">2</th>\n"+
+"      <td>Jacob</td>\n"+
+"      <td>Thornton</td>\n"+
+"      <td>@fat</td>\n"+
+"    </tr>\n"+
+"    <tr>\n"+
+"      <th scope=\"row\">3</th>\n"+
+"      <td>Larry</td>\n"+
+"      <td>the Bird</td>\n"+
+"      <td>@twitter</td>\n"+
+"    </tr>\n"+
+"  </tbody>\n"+
+"</table>\n"+
 "  		</header>");
             out.println("</body>");
             out.println("</html>");
